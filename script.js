@@ -22,7 +22,7 @@ function toggleFlame(candle) {
         // Incrementar el contador de apagados
         candle.setAttribute("data-times-off", timesOff + 1);
 
-        if (timesOff === 2) {
+        if (timesOff === 21) {
             console.log("La vela se apagará permanentemente en el siguiente intento.");
         }
     }, 3000);
