@@ -1,0 +1,172 @@
+/* Estilo global */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffccff, #ff99cc);
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Centrar completamente el pastel en la pantalla */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}   
+
+/* Contenedor del pastel */
+.container {
+    position: relative;
+}
+
+/* Pastel */
+.cake {
+    position: relative;
+    width: 250px;
+    text-align: center;
+}
+
+/* Plato */
+.plate {
+    width: 280px;
+    height: 25px;
+    background: #d4a373;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Capas del pastel */
+.bottom-layer, .middle-layer, .top-layer {
+    width: 250px;
+    height: 60px;
+    background: #ff6699;
+    border-radius: 15px;
+    position: relative;
+    margin: 5px 0;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.middle-layer {
+    width: 220px;
+    background: #ff4d8d;
+    margin: 0 auto;
+}
+
+.top-layer {
+    width: 190px;
+    background: #ff3385;
+    margin: 0 auto;
+}
+
+/* Crema del pastel */
+.icing {
+    width: 200px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Velas */
+.candles {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -60px;
+    width: 100%;
+}
+
+/* Diseño de la vela */
+.candle {
+    width: 20px;
+    height: 50px;
+    background: linear-gradient(to bottom, #ffd700, #ffcc00);
+    margin: 0 15px;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cera derretida */
+.wax {
+    width: 8px;
+    height: 10px;
+    background: #f8c471;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Número de la vela */
+.candle .number {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Llama animada */
+.flame {
+    width: 12px;
+    height: 22px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px yellow;
+    animation: flicker 0.3s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+    100% { opacity: 0.8; transform: translateX(-50%) scale(0.9); }
+}
+
+
+/* Botón de Celebrar */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff3385;
+    transform: scale(1.1);
+}
+
+/* Mensaje de cumpleaños */
+h1 {
+    font-size: 28px;
+    color: #d63384;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
