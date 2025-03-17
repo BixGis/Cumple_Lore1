@@ -15,7 +15,7 @@ function toggleFlame(candle) {
 
     // Esperar 3 segundos antes de volver a encender la llama
     setTimeout(() => {
-        if (timesOff < 2) {
+        if (timesOff < 21) {
             flame.style.display = "block"; // Encender si aún no alcanzó el límite
         }
 
