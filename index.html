@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel de Cumpleaños para mi Novia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cake">
+            <div class="candles">
+                <div class="candle" onclick="toggleFlame(this)">
+                    <div class="wax"></div>
+                    <div class="flame"></div>
+                    <span class="number">2</span>
+                </div>
+                <div class="candle" onclick="toggleFlame(this)">
+                    <div class="wax"></div>
+                    <div class="flame"></div>
+                    <span class="number">2</span>
+                </div>
+            </div>
+            <div class="top-layer"></div>
+            <div class="middle-layer"></div>
+            <div class="bottom-layer"></div>
+            <div class="icing"></div>
+            <div class="plate"></div>
+        </div>
+        <h1>🎉 ¡Feliz cumpleaños, mi amor! 🎂💖</h1>
+        <button onclick="celebrar()">🎊 ¡Celebrar! 🎶</button>
+        <audio id="birthdaySong" src="Seras.mp3"></audio>
+    </div>
+    
+    <!-- Librería de confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+    <script src="script.js"></script>
+</body>
+</html>
