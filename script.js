@@ -49,6 +49,6 @@ function celebrar() {
 
 
 function irAPagina() {
-    window.location.href = "https://bixgis.github.io/Cumple_Lore1/"; 
+    window.location.href = "https://bixgis.github.io/cumple_lore3/"; 
   }
   
