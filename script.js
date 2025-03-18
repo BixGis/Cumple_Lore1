@@ -15,14 +15,14 @@ function toggleFlame(candle) {
 
     // Esperar 3 segundos antes de volver a encender la llama
     setTimeout(() => {
-        if (timesOff < 21) {
+        if (timesOff < 2) {
             flame.style.display = "block"; // Encender si aún no alcanzó el límite
         }
 
         // Incrementar el contador de apagados
         candle.setAttribute("data-times-off", timesOff + 1);
 
-        if (timesOff === 21) {
+        if (timesOff === 2) {
             console.log("La vela se apagará permanentemente en el siguiente intento.");
         }
     }, 3000);
@@ -45,3 +45,10 @@ function celebrar() {
         console.log("No se encontró el audio.");
     }
 }
+
+
+
+function irAPagina() {
+    window.location.href = "https://bixgis.github.io/Cumple_Lore1/"; 
+  }
+  

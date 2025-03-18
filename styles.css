@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom, #ffccff, #ff99cc);
+    background: linear-gradient(to bottom, #ca5555, #503945);
     flex-direction: column;
     font-family: 'Arial', sans-serif;
     text-align: center;
